@@ -53,7 +53,7 @@ def draw_poly(d, points):
         
         poly.add(d.line(start=(startPoint[0]*cm,startPoint[1]*cm), end=(endPoint[0]*cm, endPoint[1]*cm)))
        
-def draw_polyset(d, x, y, num, dist, size, poly_sides, phase, phase_sec): 
+def draw_polyset(d, x, y, num, dist, size, poly_sides, phase=0, phase_sec=0): 
     pts = calc_radialpoints(x, y, num, dist, phase)
     
     for i in range(len(pts)):
